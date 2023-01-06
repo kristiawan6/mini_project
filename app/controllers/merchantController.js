@@ -75,10 +75,12 @@
 }
 async function deleteMerchant(req,res){
     try {
-        let deleteMerchant = await models.Merchants.destroy({where:{id: req.param.id}})
+        let deleteMerchant = await models.Merchants.destroy({
+            where:{id: req.params.id}})
         res.json({message:"Merchant Deleted", id:req.params.id})
     } catch (error) {
         res.json(error)
+        console.log(error);
     }
 }
  module.exports = {
