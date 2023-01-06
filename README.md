@@ -5,29 +5,35 @@ Merchant service app is a service that handles the catalog of products owned by 
 ## Entity Relationship Diagram
 This is how entity relationship work shown by diagram.
 
-![ERD Merchant Service](https://user-images.githubusercontent.com/97390732/193992313-800d63f4-e9b6-4585-8ee6-3b6a9d086d10.png)
+![ERD Merchant Service](/assets/erd.jpg)
 
 
 ## Architecture Diagram Merchant Service
 This is a architecture diagram of merchant service.
 
-![Architecture Diagram Merchant Service](https://user-images.githubusercontent.com/97390732/193992324-24f317ef-a574-4dbb-95cd-1fd6ece2d2e5.png)
+![Architecture Diagram Merchant Service](/assets/adiagram.jpg)
 
 
 ## List of API
 
-These are the list of API /user
+These are the list of API /merchant
 ```
-[GET] /user -> to get all user on merchant service
+[GET] /merchant -> to get all merchant on merchant service
 
-[POST] /user -> to create account on merchant service
+[GET] /merchant/{id} -> to get one merchant on merchant service
 
-[DEL] /user/{id} -> to delete account on merchant service
+[PUT] /merchant/{id} -> to update merchant on merchant service
+
+[POST] /merchant -> to create account on merchant service
+
+[DEL] /merchant/{id} -> to delete account on merchant service
 ```
 
 These are the list of API /product
 ```
 [GET] /product -> to get all products on merchant service
+
+[GET] /product/{id} -> to get one product on merchant service
 
 [POST] /product -> to add product on merchant service
 
